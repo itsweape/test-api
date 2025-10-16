@@ -6,7 +6,7 @@ const {
     createUser,
     updateUser,
     deleteUser,
-} = require("./user.controller");
+} = require("../src/api/users/user.controller");
 
 const app = express();
 app.use(express.json());
