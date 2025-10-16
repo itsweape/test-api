@@ -19,5 +19,4 @@ app.post("/users", createUser);
 app.put("/users/:id", updateUser);
 app.delete("/users/:id", deleteUser);
 
-module.exports = app;
 module.exports.handler = serverless(app);
