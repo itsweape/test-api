@@ -1,6 +1,7 @@
 const serverless = require('serverless-http');
 const express = require("express");
 const {
+    get,
     getUsers,
     getUserById,
     createUser,
@@ -11,6 +12,7 @@ const {
 const app = express();
 app.use(express.json());
 
+app.get("/", get);
 app.get("/users", getUsers);
 app.get("/users/:id", getUserById);
 app.post("/users", createUser);

@@ -15,12 +15,12 @@ let users = [
     },
 ];
 
-router.get('/', (req, res) => {
+exports.get = (req, res) => {
     res.status(200).json({
         status: 200,
         message: "Succsess",
     });
-});
+};
 
 // GET all user
 exports.getUsers = (req, res) => {
