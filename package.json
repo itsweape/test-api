@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node api/index.js",
-    "dev": "nodemon api/index.js"
+    "start": "node api/users.js",
+    "dev": "nodemon api/users.js"
   },
   "keywords": [],
   "author": "",
